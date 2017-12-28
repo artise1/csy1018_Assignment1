@@ -1,0 +1,66 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
+ul {
+  overflow: auto;
+  list-style-type: none;
+}
+
+li {
+  height: 35px;
+  float: left;
+  margin-right: 0px;
+  padding: 0 30px;
+}
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+  /* The element to apply the animation to */
+  .animated {
+    animation-name: animationName;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+  }
+
+  /* The animation code */
+  @keyframes animationName {
+    0%   { background-color: red;    }
+    50%  { background-color: orange; }
+    100% { background-color: yellow; }
+  }
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+li a:hover {
+  color: #5eb9ae;
+}
+
+li.active a {
+  font-weight: normal;
+  color: #888888;
+}
+
+
+
