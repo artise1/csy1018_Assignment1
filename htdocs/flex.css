@@ -60,18 +60,18 @@ body {
   .nav 
   {
   }
-  
-.wrapper 
+
+  .wrapper 
   {
     flex-direction: row;
   }
-  
-.main 
+
+  .main 
   {
     flex: 1 1 auto;
   }
-  
-.aside 
+
+  .aside 
   {
     width: 20%;
   }
